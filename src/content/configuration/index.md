@@ -19,6 +19,15 @@ T> 刚接触 webpack？请查看我们提供的指南，从 webpack 一些[核�
 
 T> 注意整个配置中我们使用 Node 内置的 [path 模块](https://nodejs.org/api/path.html)，并在它前面加上 [__dirname](https://nodejs.org/docs/latest/api/globals.html#globals_dirname)这个全局变量。可以防止不同操作系统之间的文件路径问题，并且可以使相对路径按照预期工作。更多「POSIX 和 Windows」的相关信息请查看[此章节](https://nodejs.org/api/path.html#path_windows_vs_posix)。
 
+## 使用不同的配置文件
+由于某种原因，你希望根据特定情况使用不同的配置文件，可以通过使用命令行 --config flag.
+package.json
+``` 
+"scripts": {
+  "build": "webpack --config prod.config.js"
+}
+``` 
+
 ## 选项
 
 点击下面配置代码中每个选项的名称，跳转到详细的文档。还要注意，带有箭头的项目可以展开，以显示更多示例，在某些情况下可以看到高级配置。
